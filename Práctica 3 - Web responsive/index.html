@@ -8,52 +8,58 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+      </style>
     <title>Document</title>
   </head>
   <body>
     <header>
       <h1>Digital Agency</h1>
       <nav>
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact"></a>Contact</li>
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
+      <img src="./Assets/Images/menu.png" alt="menu" class="menu">
     </header>
     <main>
       <section id="hero">
-        <div>
-          <h2>Building Digital Products, Brands & Experience</h2>
-          <p>
+        <div class="info">
+          <h2 class="info-text">Building Digital Products, Brands & Experience</h2>
+          <p class="info-p"> 
             Digital Agency is your Online Team Management Tool That Easy and
             Prompt
           </p>
-          <button>Contact Us</button>
+          <div class="button">
+            <button>CONTACT US</button>
+          </div>
         </div>
-        <img src="" alt="Representative Work" />
+        <img src="./Assets/Images/image-hero.png" alt="Representative Work" class="image-hero"/>
       </section>
-      <section id="Companies">
-        <p>Trusted By 4,000+ Companies</p>
-        <ul>
+      <section id="companies">
+        <p class="companies-text">Trusted By 4,000+ Companies</p>
+        <ul class="logos-companies">
           <li>
-            <a href="#"><img src="" alt="Spotify icon" />Spotify</a>
+            <a href="#"><img src="./Assets/Images/Spotify_logo_with_text.svg.webp" class="image-logos-companies" alt="Spotify icon"/> <a>
           </li>
           <li>
-            <a href="#"><img src="" alt="Slack icon" />Slack</a>
+            <a href="#"><img src="./Assets/Images/Slack_Technologies_Logo.svg.png" class="image-logos-companies" alt="Slack icon"/></a>
           </li>
           <li>
-            <a href="#"><img src="" alt="Dropbox icon" />Dropbox</a>
+            <a href="#"><img src="./Assets/Images/512px-Dropbox_logo_2017.svg.png" class="image-logos-companies" alt="Dropbox icon"/></a>
           </li>
           <li>
-            <a href="#"><img src="" alt="Zoom icon" />Zoom</a>
+            <a href="#"><img src="./Assets/Images/Zoom_Communications_Logo.svg.png" class="image-logos-companies" alt="Zoom icon"></a>
           </li>
         </ul>
       </section>
-      <section>
-        <div><img src="" alt="" /></div>
-        <div>
+      <section class="services">
+        <div><img src="./Assets/Images/image-branding-and-design-system.png" alt="image-branding-and-design-system" /></div>
+        <div class="info-services">
           <h3>Branding & Design System</h3>
           <p>
             Commonly Used In The Graphic, Print & Publishing Industris For
@@ -62,11 +68,12 @@
           <img
             src="https://icones.pro/wp-content/uploads/2021/06/icone-fleche-droite-grise.png"
             alt="arrow"
+            class="arrow"
           />
         </div>
       </section>
-      <section>
-        <div>
+      <section class="services">
+        <div class="info-services">
           <h3>Custome & Plugin Development</h3>
           <p>
             Commonly Used In The Graphic, Print & Publishing Industris For
@@ -75,93 +82,101 @@
           <img
             src="https://icones.pro/wp-content/uploads/2021/06/icone-fleche-droite-grise.png"
             alt="arrow"
+            class="arrow"
           />
         </div>
-        <div><img src="" alt="" /></div>
+        <div><img src="./Assets/Images/image-custome-and-plugin-development.png" alt="image-custome-and-plugin-development" /></div>
       </section>
-      <section id="Testimonials">
-        <p>Testimonials</p>
-        <h3>Read What Other Have To Say</h3>
-        <div>
+      <section id="testimonials">
+        <div class="testimonials-info">
+          <p>TESTIMONIALS</p>
+          <h3 class="testimonials-title">Read What Other Have To Say</h3>
+        </div>
+        <div class="testimonials-user">
           <article>
-            <img src="" alt="image-user-Andrew-Rathore" />
-            <h4>Andrew Rathore</h4>
-            <p>
+            <img
+              src="./Assets/Images/image-user-Andrew.jpg"
+              alt="image-user-Andrew-Rathore"
+            />
+            <h4 class="name-user">Andrew Rathore </h4>
+            <p class="text-opinion">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-              rerum ipsa quam corporis? Temporibus quam repellat sit recusandae
-              eius aperiam adipisci autem esse architecto? Ullam quo facere
-              aliquam odit nulla?
+              rerum ipsa quam corporis?
             </p>
           </article>
           <article>
-            <img src="" alt="image-user-Vera-Duncan" />
-            <h4>Vera Duncan</h4>
-            <p>
+            <img
+              src="./Assets/Images/image-user-vera.png"
+              alt="image-user-Vera-Duncan"
+            />
+            <h4 class="name-user">Vera Duncan</h4>
+            <p class="text-opinion">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-              rerum ipsa quam corporis? Temporibus quam repellat sit recusandae
-              eius aperiam adipisci autem esse architecto? Ullam quo facere
-              aliquam odit nulla?
+              rerum ipsa quam corporis?
             </p>
           </article>
           <article>
-            <img src="" alt="image-user-Mark-Smith" />
-            <h4>Mark Smith</h4>
-            <p>
+            <img
+              src="./Assets/Images/image-user-Mark.jpg"
+              alt="image-user-Mark-Smith"
+            />
+            <h4 class="name-user">Mark Smith</h4>
+            <p class="text-opinion">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-              rerum ipsa quam corporis? Temporibus quam repellat sit recusandae
-              eius aperiam adipisci autem esse architecto? Ullam quo facere
-              aliquam odit nulla?
+              rerum ipsa quam corporis?
             </p>
           </article>
         </div>
       </section>
-      <section>
-        <div>
-          <img src="" alt="" />
-          <div>
-            <h2>Be a part of the next big thing</h2>
+      <section id="contact">
+          <img src="./Assets/Images/image-contact.png" alt="image-contact" />
+          <div class="text-contact">
+            <h3>Be a part of the next big thing</h3>
             <p>
               We work with Brans, Startups, to SEMs. Colaborate for more impact
               and growt
             </p>
-            <p class="Button">Contact Us</p>
+            <div>
+              <button>CONTACT US</button>
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <div>
-        <h4>Digital Agency</h4>
-        <p>Building Digital Products, Brands & Experience</p>
+      <div class="links"> 
+        <div>
+          <h4>Digital Agency</h4>
+          <p class="footer-info">Building Digital Products, Brands & Experience</p>
+        </div>
+        <nav>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Guides</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Customer Histories</a></li>
+            <li><a href="#">Glosery</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <h4>Social Media</h4>
+          <ul>
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="#">Guides</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Customer Histories</a></li>
-          <li><a href="#">Glosery</a></li>
-        </ul>
-      </nav>
-      <nav>
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Partners</a></li>
-          <li><a href="#">Contact us</a></li>
-        </ul>
-      </nav>
-      <nav>
-        <h4>Social Media</h4>
-        <ul>
-          <li><a href="#">Linkedin</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Twitter</a></li>
-        </ul>
-      </nav>
-      <p>©Matheus. Todos os dereitos Reservados.</p>
+      <p class="origin">©Matheus. Todos os dereitos Reservados.</p>
     </footer>
   </body>
 </html>
